@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glyphr Studio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="toolbar">
+        <div class="brand">
+          <span class="brand-mark">G</span>
+          <h1>Glyphr Studio</h1>
+        </div>
+
+        <div class="controls">
+          <label class="field">
+            <span>Color</span>
+            <input id="colorPicker" type="color" value="#7c3aed" />
+          </label>
+
+          <label class="field">
+            <span>Brush</span>
+            <input id="brushSize" type="range" min="1" max="30" value="6" />
+          </label>
+
+          <button id="clearBtn" class="secondary">Clear</button>
+          <button id="saveBtn" class="primary">Save PNG</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <div class="panel left-panel">
+          <h2>Design tools</h2>
+          <p>Sketch a glyph, logo mark, or icon concept.</p>
+          <ul>
+            <li>Freehand drawing</li>
+            <li>Brush sizing</li>
+            <li>Quick PNG export</li>
+          </ul>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="drawingCanvas" width="980" height="650"></canvas>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
